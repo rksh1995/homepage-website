@@ -24,6 +24,54 @@ body {
   list-style: none;
   font-weight: 400;
 }
+.navbar-links .list-items a {
+  text-decoration: none;
+  color: #242322;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.navbar-links .list-items a:hover {
+  background-color: aqua;
+  border-radius: 5px;
+  color: white;
+}
+
+/* responsive navbar code */
+
+@media (max-width: 940px) {
+  .navbar-links .menu-bar i {
+    display: block;
+  }
+
+  .navbar-links .list-items {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+
+  .navbar-links .list-items li {
+    margin: 20px 0;
+  }
+  .navbar-links .list-items li a {
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+  }
+  .navbar-links .list-items li a:hover {
+    color: #000;
+    border-radius: 5px;
+  }
+  .navbar-links .menu-bar i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
 #header-content {
   display: flex;
   justify-content: space-around;
@@ -160,6 +208,7 @@ body {
 #feature-section-five {
   display: flex;
   justify-content: space-around;
+  gap: 400px;
 }
 #feature-section-five p {
   font-size: 24px;
@@ -171,11 +220,31 @@ q {
   font-weight: 800;
   font-size: 48px;
 }
+.feature-section-five-image-container {
+  position: relative;
+  top: 0px;
+}
+.section-five-image {
+  position: absolute;
+  left: -450px;
+  z-index: 1;
+}
+.section-five-image-two {
+  position: absolute;
+  bottom: 20px;
+  left: -200px;
+}
+.section-five-image-three {
+  position: absolute;
+  top: 250px;
+  right: -30px;
+}
+
 #feature-section-six {
   display: flex;
   justify-content: space-around;
   gap: 550px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 80px;
 }
 #feature-section-six p {
